@@ -39,14 +39,14 @@ class MCPComponent(Component):
                 "command": "npx @context7/mcp",
                 "required": True
             },
-            "magic": {
-                "name": "magic",
-                "description": "Modern UI component generation and design systems",
-                "npm_package": "@21st/mcp",
-                "command": "npx @21st/mcp",
+            "shadcn-ui": {
+                "name": "shadcn-ui",
+                "description": "UI component reference and design patterns from shadcn/ui",
+                "npm_package": "@jpisnice/shadcn-ui-mcp-server",
+                "command": "npx @jpisnice/shadcn-ui-mcp-server",
                 "required": False,
-                "api_key_env": "TWENTYFIRST_API_KEY",
-                "api_key_description": "21st.dev API key for UI component generation"
+                "api_key_env": "GITHUB_PERSONAL_ACCESS_TOKEN",
+                "api_key_description": "Optional GitHub token for increased rate limits"
             },
             "playwright": {
                 "name": "playwright",
@@ -62,7 +62,7 @@ class MCPComponent(Component):
         return {
             "name": "mcp",
             "version": "3.0.0",
-            "description": "MCP server integration (Context7, Sequential, Magic, Playwright)",
+            "description": "MCP server integration (Context7, Sequential, shadcn-ui, Playwright)",
             "category": "integration"
         }
     

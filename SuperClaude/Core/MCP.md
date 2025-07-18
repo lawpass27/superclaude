@@ -74,41 +74,50 @@ MCP (Model Context Protocol) server integration and orchestration system for Cla
 - Scribe Persona: Structured documentation workflows, multilingual content organization
 - Loop Command: Iterative improvement analysis, progressive refinement planning
 
-## Magic Integration (UI Components & Design)
+## shadcn-ui Integration (UI Component Reference & Design System)
 
-**Purpose**: Modern UI component generation, design system integration, responsive design
+**Purpose**: Access to shadcn/ui components, design patterns, and implementation examples for modern UI development
 
 **Activation Patterns**:
-- Automatic: UI component requests, design system queries
-- Manual: `--magic` flag
-- Smart: Frontend persona active, component-related queries
+- Automatic: UI component references, design system queries, Rails/ERB development
+- Manual: `--shadcn` flag
+- Smart: Frontend persona active, component documentation needed
 
 **Workflow Process**:
-1. Requirement Parsing: Extract component specifications and design system requirements
-2. Pattern Search: Find similar components and design patterns from 21st.dev database
-3. Framework Detection: Identify target framework (React, Vue, Angular) and version
-4. Server Coordination: Sync with Context7 for framework patterns, Sequential for complex logic
-5. Code Generation: Create component with modern best practices and framework conventions
-6. Design System Integration: Apply existing themes, styles, tokens, and design patterns
-7. Accessibility Compliance: Ensure WCAG compliance, semantic markup, and keyboard navigation
-8. Responsive Design: Implement mobile-first responsive patterns
-9. Optimization: Apply performance optimizations and code splitting
-10. Quality Assurance: Validate against design system and accessibility standards
+1. Component Query: Identify needed shadcn/ui component or pattern
+2. Component Retrieval: Use `get_component` to fetch source code and structure
+3. Demo Access: Use `get_component_demo` for usage examples
+4. Framework Adaptation: Convert React/JSX to target framework (ERB, Vue, etc.)
+5. Style Extraction: Extract Tailwind classes and design tokens
+6. Pattern Analysis: Understand component structure and interaction patterns
+7. Accessibility Review: Note ARIA attributes and keyboard navigation
+8. Implementation Guide: Provide framework-specific implementation
+9. Customization: Adapt to project's design system while maintaining patterns
+10. Quality Assurance: Ensure accessibility and responsiveness are preserved
 
-**Component Categories**:
-- Interactive: Buttons, forms, modals, dropdowns, navigation, search components
-- Layout: Grids, containers, cards, panels, sidebars, headers, footers
-- Display: Typography, images, icons, charts, tables, lists, media
-- Feedback: Alerts, notifications, progress indicators, tooltips, loading states
-- Input: Text fields, selectors, date pickers, file uploads, rich text editors
-- Navigation: Menus, breadcrumbs, pagination, tabs, steppers
-- Data: Tables, grids, lists, cards, infinite scroll, virtualization
+**Available Tools**:
+- `list_components`: Get all available shadcn/ui components
+- `get_component`: Retrieve component source code
+- `get_component_demo`: Get usage examples
+- `get_component_metadata`: Access dependencies and configuration
+- `get_block`: Retrieve complete block implementations
+- `list_blocks`: List available pre-built blocks
+- `get_directory_structure`: Explore shadcn/ui repository
 
-**Framework Support**:
-- React: Hooks, TypeScript, modern patterns, Context API, state management
-- Vue: Composition API, TypeScript, reactive patterns, Pinia integration
-- Angular: Component architecture, TypeScript, reactive forms, services
-- Vanilla: Web Components, modern JavaScript, CSS custom properties
+**Component Categories** (50+ components):
+- Interactive: Button, Dialog, Dropdown Menu, Command, Context Menu
+- Layout: Card, Separator, Tabs, Collapsible, Resizable
+- Display: Alert, Badge, Avatar, Progress, Skeleton, Table
+- Feedback: Alert Dialog, Toast, Sonner, Tooltip, Hover Card
+- Input: Form, Input, Select, Switch, Checkbox, Radio Group
+- Navigation: Navigation Menu, Breadcrumb, Pagination, Sheet
+- Data: Data Table, Calendar, Date Picker, Carousel
+
+**Framework Adaptation Patterns**:
+- React → Rails: JSX to ERB helpers, Hooks to Stimulus controllers
+- React → Vue: JSX to template syntax, State to reactive data
+- React → Vanilla: Component to Web Components or vanilla JS
+- Style Preservation: Maintain Tailwind classes across frameworks
 
 ## Playwright Integration (Browser Automation & Testing)
 
@@ -151,7 +160,7 @@ MCP (Model Context Protocol) server integration and orchestration system for Cla
 
 **Development Commands**:
 - Context7: Framework patterns, library documentation
-- Magic: UI component generation
+- shadcn-ui: UI component reference and patterns
 - Sequential: Complex setup workflows
 
 **Analysis Commands**:
@@ -197,7 +206,7 @@ MCP (Model Context Protocol) server integration and orchestration system for Cla
 **Caching Strategies**:
 - Context7 Cache: Documentation lookups with version-aware caching
 - Sequential Cache: Analysis results with pattern matching
-- Magic Cache: Component patterns with design system versioning
+- shadcn-ui Cache: Component patterns and Tailwind classes
 - Playwright Cache: Test results and screenshots with environment-specific caching
 - Cross-Server Cache: Shared cache for multi-server operations
 - Loop Optimization: Cache iterative analysis results, reuse improvement patterns
@@ -205,7 +214,7 @@ MCP (Model Context Protocol) server integration and orchestration system for Cla
 **Error Handling and Recovery**:
 - Context7 unavailable → WebSearch for documentation → Manual implementation
 - Sequential timeout → Use native Claude Code analysis → Note limitations
-- Magic failure → Generate basic component → Suggest manual enhancement
+- shadcn-ui unavailable → Use Context7 for React patterns → Generate from scratch
 - Playwright connection lost → Suggest manual testing → Provide test cases
 
 **Recovery Strategies**:

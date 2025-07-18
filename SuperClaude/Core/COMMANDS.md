@@ -25,7 +25,7 @@ performance-profile: "optimization|standard|complex"
 ### Integration Layers
 - **Claude Code**: Native slash command compatibility
 - **Persona System**: Auto-activation based on command context
-- **MCP Servers**: Context7, Sequential, Magic, Playwright integration
+- **MCP Servers**: Context7, Sequential, shadcn-ui, Playwright integration
 - **Wave System**: Multi-stage orchestration for complex operations
 
 ## Wave System Integration
@@ -49,7 +49,7 @@ performance-profile: "optimization"
 ---
 ```
 - **Auto-Persona**: Frontend, Backend, Architect, Scribe
-- **MCP Integration**: Magic (UI builds), Context7 (patterns), Sequential (logic)
+- **MCP Integration**: shadcn-ui (UI patterns), Context7 (patterns), Sequential (logic)
 - **Tool Orchestration**: [Read, Grep, Glob, Bash, TodoWrite, Edit, MultiEdit]
 - **Arguments**: `[target]`, `@<path>`, `!<command>`, `--<flags>`
 
@@ -64,7 +64,7 @@ performance-profile: "standard"
 ---
 ```
 - **Auto-Persona**: Frontend, Backend, Architect, Security (context-dependent)
-- **MCP Integration**: Magic (UI components), Context7 (patterns), Sequential (complex logic)
+- **MCP Integration**: shadcn-ui (UI components), Context7 (patterns), Sequential (complex logic)
 - **Tool Orchestration**: [Read, Write, Edit, MultiEdit, Bash, Glob, TodoWrite, Task]
 - **Arguments**: `[feature-description]`, `--type component|api|service|feature`, `--framework <name>`, `--<flags>`
 
@@ -82,7 +82,7 @@ performance-profile: "complex"
 ---
 ```
 - **Auto-Persona**: Analyzer, Architect, Security
-- **MCP Integration**: Sequential (primary), Context7 (patterns), Magic (UI analysis)
+- **MCP Integration**: Sequential (primary), Context7 (patterns), shadcn-ui (UI analysis)
 - **Tool Orchestration**: [Read, Grep, Glob, Bash, TodoWrite]
 - **Arguments**: `[target]`, `@<path>`, `!<command>`, `--<flags>`
 
@@ -104,7 +104,7 @@ performance-profile: "optimization"
 ---
 ```
 - **Auto-Persona**: Refactorer, Performance, Architect, QA
-- **MCP Integration**: Sequential (logic), Context7 (patterns), Magic (UI improvements)
+- **MCP Integration**: Sequential (logic), Context7 (patterns), shadcn-ui (UI improvements)
 - **Tool Orchestration**: [Read, Grep, Glob, Edit, MultiEdit, Bash]
 - **Arguments**: `[target]`, `@<path>`, `!<command>`, `--<flags>`
 
@@ -123,7 +123,7 @@ performance-profile: "optimization"
 
 **`/git [operation] [flags]`** - Git workflow assistant | Auto-Persona: DevOps, Scribe, QA | MCP: Sequential
 
-**`/design [domain] [flags]`** - Design orchestration | Auto-Persona: Architect, Frontend | MCP: Magic, Sequential, Context7
+**`/design [domain] [flags]`** - Design orchestration | Auto-Persona: Architect, Frontend | MCP: shadcn-ui, Sequential, Context7
 
 ### Meta & Orchestration Commands
 

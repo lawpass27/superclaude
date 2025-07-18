@@ -50,7 +50,7 @@ Persona system provides specialized AI behavior patterns optimized for specific 
 **MCP Server Preferences**:
 - **Primary**: Sequential - For comprehensive architectural analysis
 - **Secondary**: Context7 - For architectural patterns and best practices
-- **Avoided**: Magic - Focuses on generation over architectural consideration
+- **Avoided**: None - All servers provide valuable architectural insights
 
 **Optimized Commands**:
 - `/analyze` - System-wide architectural analysis with dependency mapping
@@ -86,8 +86,9 @@ Persona system provides specialized AI behavior patterns optimized for specific 
 - **Core Web Vitals**: LCP <2.5s, FID <100ms, CLS <0.1
 
 **MCP Server Preferences**:
-- **Primary**: Magic - For modern UI component generation and design system integration
+- **Primary**: shadcn-ui - For UI component patterns and design system reference
 - **Secondary**: Playwright - For user interaction testing and performance validation
+- **Tertiary**: Context7 - For framework-specific patterns and best practices
 
 **Optimized Commands**:
 - `/build` - UI build optimization and bundle analysis
@@ -125,7 +126,7 @@ Persona system provides specialized AI behavior patterns optimized for specific 
 **MCP Server Preferences**:
 - **Primary**: Context7 - For backend patterns, frameworks, and best practices
 - **Secondary**: Sequential - For complex backend system analysis
-- **Avoided**: Magic - Focuses on UI generation rather than backend concerns
+- **Note**: shadcn-ui less relevant for pure backend work
 
 **Optimized Commands**:
 - `/build --api` - API design and backend build optimization
@@ -198,7 +199,7 @@ Persona system provides specialized AI behavior patterns optimized for specific 
 **MCP Server Preferences**:
 - **Primary**: Sequential - For threat modeling and security analysis
 - **Secondary**: Context7 - For security patterns and compliance standards
-- **Avoided**: Magic - UI generation doesn't align with security analysis
+- **Note**: UI servers (shadcn-ui) less relevant for security work
 
 **Optimized Commands**:
 - `/analyze --focus security` - Security-focused system analysis
@@ -234,7 +235,7 @@ Persona system provides specialized AI behavior patterns optimized for specific 
 **MCP Server Preferences**:
 - **Primary**: Context7 - For educational resources and documentation patterns
 - **Secondary**: Sequential - For structured explanations and learning paths
-- **Avoided**: Magic - Prefers showing methodology over generating solutions
+- **Optional**: shadcn-ui - For teaching UI component patterns
 
 **Optimized Commands**:
 - `/explain` - Comprehensive educational explanations
@@ -272,7 +273,7 @@ Persona system provides specialized AI behavior patterns optimized for specific 
 **MCP Server Preferences**:
 - **Primary**: Sequential - For systematic refactoring analysis
 - **Secondary**: Context7 - For refactoring patterns and best practices
-- **Avoided**: Magic - Prefers refactoring existing code over generation
+- **Optional**: shadcn-ui - For reference when refactoring UI components
 
 **Optimized Commands**:
 - `/improve --quality` - Code quality and maintainability
@@ -309,7 +310,7 @@ Persona system provides specialized AI behavior patterns optimized for specific 
 **MCP Server Preferences**:
 - **Primary**: Playwright - For performance metrics and user experience measurement
 - **Secondary**: Sequential - For systematic performance analysis
-- **Avoided**: Magic - Generation doesn't align with optimization focus
+- **Optional**: shadcn-ui - For UI performance patterns
 
 **Optimized Commands**:
 - `/improve --perf` - Performance optimization with metrics validation
@@ -346,7 +347,7 @@ Persona system provides specialized AI behavior patterns optimized for specific 
 **MCP Server Preferences**:
 - **Primary**: Playwright - For end-to-end testing and user workflow validation
 - **Secondary**: Sequential - For test scenario planning and analysis
-- **Avoided**: Magic - Prefers testing existing systems over generation
+- **Optional**: shadcn-ui - For testing UI component patterns
 
 **Optimized Commands**:
 - `/test` - Comprehensive testing strategy and implementation
@@ -383,7 +384,7 @@ Persona system provides specialized AI behavior patterns optimized for specific 
 **MCP Server Preferences**:
 - **Primary**: Sequential - For infrastructure analysis and deployment planning
 - **Secondary**: Context7 - For deployment patterns and infrastructure best practices
-- **Avoided**: Magic - UI generation doesn't align with infrastructure focus
+- **Note**: UI servers (shadcn-ui) not relevant for infrastructure
 
 **Optimized Commands**:
 - `/git` - Version control workflows and deployment coordination
@@ -423,7 +424,7 @@ Persona system provides specialized AI behavior patterns optimized for specific 
 **MCP Server Preferences**:
 - **Primary**: Context7 - For documentation patterns, style guides, and localization standards
 - **Secondary**: Sequential - For structured writing and content organization
-- **Avoided**: Magic - Prefers crafting content over generating components
+- **Optional**: shadcn-ui - For documenting UI component patterns
 
 **Optimized Commands**:
 - `/document` - Professional documentation creation with cultural adaptation

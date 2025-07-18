@@ -117,12 +117,12 @@ analysis:
 creation:
   verbs: [create, build, implement, generate, design]
   outputs: [new files, features, components]
-  typical_tools: [Write, Magic, Context7]
+  typical_tools: [Write, shadcn-ui, Context7]
 
 implementation:
   verbs: [implement, develop, code, construct, realize]
   outputs: [working features, functional code, integrated components]
-  typical_tools: [Write, Edit, MultiEdit, Magic, Context7, Sequential]
+  typical_tools: [Write, Edit, MultiEdit, shadcn-ui, Context7, Sequential]
 
 modification:
   verbs: [update, refactor, improve, optimize, fix]
@@ -193,10 +193,10 @@ wave-strategies:
 | Pattern | Complexity | Domain | Auto-Activates | Confidence |
 |---------|------------|---------|----------------|------------|
 | "analyze architecture" | complex | infrastructure | architect persona, --ultrathink, Sequential | 95% |
-| "create component" | simple | frontend | frontend persona, Magic, --uc | 90% |
+| "create component" | simple | frontend | frontend persona, shadcn-ui, --uc | 90% |
 | "implement feature" | moderate | any | domain-specific persona, Context7, Sequential | 88% |
 | "implement API" | moderate | backend | backend persona, --seq, Context7 | 92% |
-| "implement UI component" | simple | frontend | frontend persona, Magic, --c7 | 94% |
+| "implement UI component" | simple | frontend | frontend persona, shadcn-ui, --c7 | 94% |
 | "implement authentication" | complex | security | security persona, backend persona, --validate | 90% |
 | "fix bug" | moderate | any | analyzer persona, --think, Sequential | 85% |
 | "optimize performance" | complex | backend | performance persona, --think-hard, Playwright | 90% |
@@ -218,7 +218,7 @@ wave-strategies:
 - **Search**: Grep (specific patterns) or Agent (open-ended)
 - **Understanding**: Sequential (complexity >0.7) or Read (simple)  
 - **Documentation**: Context7
-- **UI**: Magic
+- **UI**: shadcn-ui
 - **Testing**: Playwright
 
 **Delegation & Wave Evaluation**:
@@ -341,7 +341,7 @@ token_optimization:
 - **Trigger Conditions**: Vulnerability detection, auth failures, compliance gaps
 - **Confidence Threshold**: 90% for automatic activation
 
-**UI/UX Tasks** → `--persona-frontend` + `--magic`
+**UI/UX Tasks** → `--persona-frontend` + `--shadcn`
 - **Trigger Conditions**: Component creation, responsive design, accessibility
 - **Confidence Threshold**: 80% for automatic activation
 
@@ -358,7 +358,7 @@ token_optimization:
 **Context-Based Auto-Activation**:
 - Performance issues → --persona-performance + --focus performance + --think
 - Security concerns → --persona-security + --focus security + --validate
-- UI/UX tasks → --persona-frontend + --magic + --c7
+- UI/UX tasks → --persona-frontend + --shadcn + --c7
 - Complex debugging → --think + --seq + --persona-analyzer
 - Large codebase → --uc when context >75% + --delegate auto
 - Testing operations → --persona-qa + --play + --validate
@@ -467,7 +467,7 @@ Smart MCP server selection and orchestration.
 **Quick Selection Guide**:
 - **Context7**: Library docs, framework patterns
 - **Sequential**: Complex analysis, multi-step reasoning
-- **Magic**: UI components, design systems
+- **shadcn-ui**: UI component patterns, design reference
 - **Playwright**: E2E testing, performance metrics
 
 ### Intelligent Server Coordination

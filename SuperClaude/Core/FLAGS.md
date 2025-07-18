@@ -74,10 +74,11 @@ Flag system for Claude Code SuperClaude framework with auto-activation and confl
 - Auto-activates: Complex debugging, system design, --think flags
 - Detection: debug/trace/analyze keywords, nested conditionals, async chains
 
-**`--magic`**
-- Enable Magic for UI component generation
+**`--shadcn`**
+- Enable shadcn-ui for UI component reference and patterns
 - Auto-activates: UI component requests, design system queries
 - Detection: component/button/form keywords, JSX patterns, accessibility requirements
+- Use cases: Component structure reference, Tailwind patterns, Rails/ERB adaptation
 
 **`--play` / `--playwright`**
 - Enable Playwright for cross-browser automation and E2E testing
@@ -93,7 +94,7 @@ Flag system for Claude Code SuperClaude framework with auto-activation and confl
 - 40-60% faster execution, WebSearch fallback
 
 **`--no-[server]`**
-- Disable specific MCP server (e.g., --no-magic, --no-seq)
+- Disable specific MCP server (e.g., --no-shadcn, --no-seq)
 - Server-specific fallback strategies, 10-30% faster per disabled server
 
 ## Sub-Agent Delegation Flags
@@ -198,7 +199,7 @@ Flag system for Claude Code SuperClaude framework with auto-activation and confl
 **Auto-Activation Logic**:
 - **Context7**: External library imports, framework questions, documentation requests
 - **Sequential**: Complex debugging, system design, any --think flags  
-- **Magic**: UI component requests, design system queries, frontend persona
+- **shadcn-ui**: UI component requests, design system queries, frontend persona
 - **Playwright**: Testing workflows, performance monitoring, QA persona
 
 ### Flag Precedence
